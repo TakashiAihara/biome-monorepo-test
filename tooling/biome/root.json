@@ -1,7 +1,14 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": ["./base.json"],
+  "linter": {
+    "rules": {
+      "style": {
+        "useImportType": "error"
+      }
+    }
+  },
   "files": {
-    "ignore": ["apps", "packages", "tooling", "*controller.ts"]
+    "ignore": ["apps", "packages", "tooling"]
   }
 }

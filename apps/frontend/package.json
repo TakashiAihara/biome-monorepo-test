@@ -11,7 +11,7 @@
     "build": "next build",
     "clean": "git clean -dfx dist .next .turbo node_modules",
     "dev": "next dev --turbo",
-    "format": "biome format --writep",
+    "format": "biome format --write",
     "preview": "next build && next start",
     "start": "next start",
     "start:dev": "pnpm dev",

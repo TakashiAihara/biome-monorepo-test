@@ -1,9 +1,6 @@
 {
   "name": "@tooling/biome",
-  "files": [
-    "*.json",
-    "*.jsonc"
-  ],
+  "files": ["*.json", "*.jsonc"],
   "scripts": {
     "analyze": "biome check --write",
     "clean": "git clean -dfx dist node_modules .tsbuildinfo",

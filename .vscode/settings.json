@@ -70,6 +70,7 @@
     "source.sortImports": "explicit",
     "source.removeUnused.ts": "explicit",
     "source.fixAll.ts": "explicit",
+    "source.organizeImports.biome": "explicit",
     "source.sortPackageJson": "explicit"
   },
   "editor.formatOnPaste": true,

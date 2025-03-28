@@ -4,9 +4,7 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist/**"
-  ],
+  "files": ["dist/**"],
   "scripts": {
     "analyze": "biome check --write",
     "build": "tsc -p tsconfig.build.json",

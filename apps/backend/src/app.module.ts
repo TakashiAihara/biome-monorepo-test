@@ -8,7 +8,8 @@ import { HealthModule } from './HealthCheck/health-check.module';
       {
         path: 'health',
         module: HealthModule,
-      }]),
+      },
+    ]),
     HealthModule,
   ],
   controllers: [],

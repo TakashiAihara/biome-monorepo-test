@@ -4,9 +4,7 @@ import { ServiceHealth } from '..';
 
 @Controller()
 export class HealthController {
-  constructor(
-    private readonly health: HealthCheckService,
-  ) {}
+  constructor(private readonly health: HealthCheckService) {}
 
   @HealthCheck()
   @Get()

@@ -6,7 +6,7 @@
     "analyze": "biome analyze --config-path ./node_modules/@tooling/biome/root.json",
     "build": "pnpm -r build",
     "clean": "git clean -dfx .turbo node_modules && pnpm -r clean",
-    "format": "biome format --config-path ./node_modules/@tooling/biome/root.json",
+    "format": "biome format --write --config-path ./node_modules/@tooling/biome/root.json",
     "start:dev": "pnpm -r --parallel --stream start:dev"
   },
   "devDependencies": {
@@ -22,13 +22,7 @@
     "yarn": "DO NOT USE YARN"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "@nestjs/core",
-      "@swc/core"
-    ],
-    "ignoredBuiltDependencies": [
-      "@nestjs/core"
-    ]
+    "onlyBuiltDependencies": ["@biomejs/biome", "@nestjs/core", "@swc/core"],
+    "ignoredBuiltDependencies": ["@nestjs/core"]
   }
 }

@@ -6,7 +6,7 @@ export function Health() {
   const { data, isLoading, isError } = api.health.healthCheck.useQuery(undefined, {
     refetchInterval: 1000,
   });
-  const { status}  = data ?? {};
+  const { status } = data ?? {};
 
   let content;
   if (isLoading) {

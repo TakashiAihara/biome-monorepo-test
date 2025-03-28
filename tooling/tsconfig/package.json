@@ -1,8 +1,6 @@
 {
   "name": "@tooling/tsconfig",
-  "files": [
-    "*.json"
-  ],
+  "files": ["*.json"],
   "scripts": {
     "analyze": "biome check --write",
     "clean": "git clean -dfx dist node_modules .tsbuildinfo",
