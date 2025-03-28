@@ -6,7 +6,6 @@
     "analyze": "biome analyze --config-path ./node_modules/@tooling/biome/root.json",
     "build": "pnpm -r build",
     "clean": "git clean -dfx .turbo node_modules && pnpm -r clean",
-    "format": "biome format --write --config-path ./node_modules/@tooling/biome/root.json",
     "start:dev": "pnpm -r --parallel --stream start:dev"
   },
   "devDependencies": {

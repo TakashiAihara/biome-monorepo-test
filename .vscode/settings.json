@@ -1,5 +1,6 @@
 {
   "biome.enabled": true,
+  "biome.lsp.trace.server": "verbose",
   "biome.projects": [
     {
       "path": "apps/frontend",

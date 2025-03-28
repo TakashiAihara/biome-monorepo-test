@@ -66,7 +66,7 @@ importers:
         version: 1.9.4
       '@nestjs/cli':
         specifier: ^11.0.5
-        version: 11.0.5(@swc/cli@0.6.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(chokidar@4.0.3))(@swc/core@1.11.13(@swc/helpers@0.5.15))(@types/node@22.13.14)
+        version: 11.0.5(@swc/cli@0.6.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(chokidar@4.0.3))(@swc/core@1.11.13(@swc/helpers@0.5.15))(@types/node@22.13.14)(esbuild@0.25.1)
       '@nestjs/schematics':
         specifier: ^11.0.2
         version: 11.0.2(chokidar@4.0.3)(typescript@5.8.2)
@@ -3849,7 +3849,7 @@ snapshots:
       '@napi-rs/nice-win32-x64-msvc': 1.0.1
     optional: true
 
-  '@nestjs/cli@11.0.5(@swc/cli@0.6.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(chokidar@4.0.3))(@swc/core@1.11.13(@swc/helpers@0.5.15))(@types/node@22.13.14)':
+  '@nestjs/cli@11.0.5(@swc/cli@0.6.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(chokidar@4.0.3))(@swc/core@1.11.13(@swc/helpers@0.5.15))(@types/node@22.13.14)(esbuild@0.25.1)':
     dependencies:
       '@angular-devkit/core': 19.1.8(chokidar@4.0.3)
       '@angular-devkit/schematics': 19.1.8(chokidar@4.0.3)
@@ -3860,7 +3860,7 @@ snapshots:
       chokidar: 4.0.3
       cli-table3: 0.6.5
       commander: 4.1.1
-      fork-ts-checker-webpack-plugin: 9.0.2(typescript@5.7.3)(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15)))
+      fork-ts-checker-webpack-plugin: 9.0.2(typescript@5.7.3)(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1))
       glob: 11.0.1
       node-emoji: 1.11.0
       ora: 5.4.1
@@ -3868,7 +3868,7 @@ snapshots:
       tsconfig-paths: 4.2.0
       tsconfig-paths-webpack-plugin: 4.2.0
       typescript: 5.7.3
-      webpack: 5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))
+      webpack: 5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1)
       webpack-node-externals: 3.0.0
     optionalDependencies:
       '@swc/cli': 0.6.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(chokidar@4.0.3)
@@ -5117,7 +5117,7 @@ snapshots:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
-  fork-ts-checker-webpack-plugin@9.0.2(typescript@5.7.3)(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))):
+  fork-ts-checker-webpack-plugin@9.0.2(typescript@5.7.3)(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1)):
     dependencies:
       '@babel/code-frame': 7.26.2
       chalk: 4.1.2
@@ -5132,7 +5132,7 @@ snapshots:
       semver: 7.7.1
       tapable: 2.2.1
       typescript: 5.7.3
-      webpack: 5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))
+      webpack: 5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1)
 
   form-data-encoder@2.1.4: {}
 
@@ -6054,16 +6054,17 @@ snapshots:
       fast-fifo: 1.3.2
       streamx: 2.22.0
 
-  terser-webpack-plugin@5.3.14(@swc/core@1.11.13(@swc/helpers@0.5.15))(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))):
+  terser-webpack-plugin@5.3.14(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1)(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 4.3.0
       serialize-javascript: 6.0.2
       terser: 5.39.0
-      webpack: 5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))
+      webpack: 5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1)
     optionalDependencies:
       '@swc/core': 1.11.13(@swc/helpers@0.5.15)
+      esbuild: 0.25.1
 
   terser@5.39.0:
     dependencies:
@@ -6220,7 +6221,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15)):
+  webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.7
@@ -6242,7 +6243,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.14(@swc/core@1.11.13(@swc/helpers@0.5.15))(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15)))
+      terser-webpack-plugin: 5.3.14(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1)(webpack@5.98.0(@swc/core@1.11.13(@swc/helpers@0.5.15))(esbuild@0.25.1))
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     transitivePeerDependencies:
