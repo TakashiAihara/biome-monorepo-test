@@ -1,0 +1,35 @@
+{
+  "name": "@packages/shared-constants",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "analyze": "biome check --write",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "git clean -dfx dist .turbo node_modules",
+    "format": "biome format --write",
+    "type:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@tooling/biome": "workspace:",
+    "@tooling/tsconfig": "workspace:",
+    "@tsconfig/strictest": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@10.7.0",
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": "DO NOT USE NPM",
+    "pnpm": "10.7.0",
+    "yarn": "DO NOT USE YARN"
+  }
+}

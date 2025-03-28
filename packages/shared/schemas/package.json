@@ -1,0 +1,58 @@
+{
+  "name": "@packages/shared-schemas",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js"
+    },
+    "./sns": {
+      "import": "./dist/sns.js",
+      "types": "./dist/sns.d.ts",
+      "require": "./dist/sns.js"
+    },
+    "./sendgrid": {
+      "import": "./dist/sendgrid.js",
+      "types": "./dist/sendgrid.d.ts",
+      "require": "./dist/sendgrid.js"
+    },
+    "./ses": {
+      "import": "./dist/ses.js",
+      "types": "./dist/ses.d.ts",
+      "require": "./dist/ses.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "analyze": "biome check --write",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "git clean -dfx dist .turbo node_modules",
+    "format": "biome format --write",
+    "type:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@packages/shared-constants": "workspace:^",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@tooling/biome": "workspace:",
+    "@tooling/tsconfig": "workspace:",
+    "@tsconfig/strictest": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@10.7.0",
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": "DO NOT USE NPM",
+    "pnpm": "10.7.0",
+    "yarn": "DO NOT USE YARN"
+  }
+}

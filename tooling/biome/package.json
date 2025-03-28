@@ -1,0 +1,16 @@
+{
+  "name": "@tooling/biome",
+  "files": [
+    "*.json",
+    "*.jsonc"
+  ],
+  "scripts": {
+    "analyze": "biome check --write",
+    "clean": "git clean -dfx dist node_modules .tsbuildinfo",
+    "format": "biome format --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@tsconfig/strictest": "catalog:"
+  }
+}

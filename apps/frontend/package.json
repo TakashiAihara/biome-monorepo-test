@@ -1,0 +1,62 @@
+{
+  "name": "@acme/frontend",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "TakashiAihara"
+  },
+  "type": "module",
+  "scripts": {
+    "analyze": "biome check --write",
+    "build": "next build",
+    "clean": "git clean -dfx dist .next .turbo node_modules",
+    "dev": "next dev --turbo",
+    "format": "biome format --writep",
+    "preview": "next build && next start",
+    "start": "next start",
+    "start:dev": "pnpm dev",
+    "start:prod": "pnpm build && pnpm start",
+    "type:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@acme/backend": "workspace:",
+    "@packages/shared-constants": "workspace:^",
+    "@packages/shared-schemas": "workspace:",
+    "@t3-oss/env-nextjs": "^0.12.0",
+    "@tanstack/react-query": "^5.69.0",
+    "@trpc/client": "^11.0.0",
+    "@trpc/react-query": "^11.0.0",
+    "@trpc/server": "^11.0.0",
+    "axios": "^1.8.4",
+    "geist": "^1.3.1",
+    "next": "^15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "server-only": "^0.0.1",
+    "superjson": "^2.2.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@tailwindcss/postcss": "^4.0.17",
+    "@tooling/biome": "workspace:",
+    "@tooling/tsconfig": "workspace:",
+    "@tsconfig/strictest": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@10.7.0",
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": "DO NOT USE NPM",
+    "pnpm": "10.7.0",
+    "yarn": "DO NOT USE YARN"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.38.1"
+  }
+}

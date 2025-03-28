@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@tooling/biome": ["packages/tooling/biome"],
+      "@tooling/tsconfig": ["packages/tooling/tsconfig"],
+
+      "@packages/shared/schemas": ["packages/shared/schemas/src"],
+      "@packages/shared/constants": ["packages/shared/constants/src"],
+
+      "@acme/frontend": ["apps/frontend/src"],
+      "@acme/backend": ["apps/backend/src"]
+    },
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true
+  }
+}
